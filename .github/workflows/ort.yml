@@ -25,7 +25,7 @@ jobs:
         uses: oss-review-toolkit/ort-ci-github-action@v1
 
       - name: verify name exists
-        run: echo $ORT_RESULTS_PATH
+        run: ls -la .ort/ort-results
 
       - name: SBOM upload
         uses: advanced-security/spdx-dependency-submission-action@v0.1.1
