@@ -11,5 +11,7 @@ jobs:
   maven-deps:
     runs-on: ubuntu-latest
     steps:
+      - name: Checkout project
+        uses: actions/checkout@v4
       - name: Submit Dependency Snapshot
         uses: advanced-security/maven-dependency-submission-action@v3
